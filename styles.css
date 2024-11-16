@@ -1,0 +1,308 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(45deg, #b71c1c, #d32f2f);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Seção principal */
+.hero {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+}
+
+/* Programação */
+.programacao {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: -2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.programacao h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #b71c1c;
+}
+
+.programacao ul {
+    list-style: none;
+    padding: 0;
+}
+
+.programacao ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Formulários */
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #b71c1c;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #b71c1c;
+    box-shadow: 0 0 5px rgba(183, 28, 28, 0.5);
+}
+
+form button {
+    background: #b71c1c;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #880e4f;
+}
+
+/* Galeria de fotos */
+.galeria {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #b71c1c;
+}
+
+.fotos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 1rem;
+}
+
+.fotos-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fotos-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* Álbuns */
+.albuns {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.albuns h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #b71c1c;
+}
+
+.albuns-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.album {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.album p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.album:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mensagem Diária */
+.mensagem-diaria {
+    background: #f4f4f4;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.mensagem-diaria h2 {
+    font-size: 2rem;
+    color: #b71c1c;
+    margin-bottom: 1rem;
+}
+
+.mensagem-diaria #mensagem {
+    font-size: 1.5rem;
+    color: #333;
+    font-style: italic;
+}
+
+/* Transmissão ao Vivo */
+.transmissao-ao-vivo {
+    background: #333;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+
+.transmissao-ao-vivo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #d32f2f;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
