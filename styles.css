@@ -14,7 +14,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: linear-gradient(45deg, #b71c1c, #d32f2ffa, #b71c1c);
+    background: linear-gradient(45deg, #000000, #575757fa, #000000);
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -127,27 +127,50 @@ nav .menu li a:hover {
     margin-bottom: 0.5rem;
 }
 
-/* Formulários */
-form {
+/* Formulário de Contato */
+.contato {
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.contato p {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+    color: #030303;
+}
+
+
+.contato h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #b71c1c;
+}
+
+.contato form {
     background: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 2rem auto;
-    text-align: left;
+    margin: 0 auto;
 }
 
-form label {
+.contato form label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
     color: #b71c1c;
+    font-size: 1.2rem;
 }
 
-form input,
-form textarea,
-form button {
+.contato form input,
+.contato form textarea,
+.contato form button {
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1rem;
@@ -156,14 +179,14 @@ form button {
     font-size: 1rem;
 }
 
-form input:focus,
-form textarea:focus {
+.contato form input:focus,
+.contato form textarea:focus {
     outline: none;
     border-color: #b71c1c;
     box-shadow: 0 0 5px rgba(183, 28, 28, 0.5);
 }
 
-form button {
+.contato form button {
     background: #b71c1c;
     color: white;
     border: none;
@@ -172,9 +195,46 @@ form button {
     transition: background 0.3s ease;
 }
 
-form button:hover {
+.contato form button:hover {
     background: #880e4f;
 }
+
+/* Localização */
+.localizacao {
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.localizacao h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #b71c1c;
+}
+
+.localizacao p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.mapa-container {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+
 
 /* Galeria de fotos */
 .galeria {
@@ -211,7 +271,7 @@ form button:hover {
 /* Rodapé */
 footer {
     text-align: center;
-    background: #333;
+    background: linear-gradient(45deg, #000000, #575757fa, #000000);
     color: white;
     padding: 1rem;
     margin-top: 3rem;
@@ -243,7 +303,8 @@ footer {
 
 /* Transmissão ao Vivo */
 .transmissao-ao-vivo {
-    background: #333;
+    
+    background: linear-gradient(60deg, #000000, #575757fa, #000000);
     color: white;
     padding: 2rem 1rem;
     text-align: center;
@@ -275,4 +336,101 @@ footer {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* Seção de Localização */
+.localizacao {
+    background: #f8f9fa;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.localizacao h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #b71c1c;
+}
+
+.localizacao p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.mapa-container {
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Formulário de Pedido de oração */
+.pedido-oracao {
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 3rem auto;
+}
+
+
+.pedido-oracao h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #b71c1c;
+}
+
+.pedido-oracao form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pedido-oracao form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #b71c1c;
+    font-size: 1.2rem;
+}
+
+.pedido-oracao form input,
+.pedido-oracao form textarea,
+.pedido-oracao form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.pedido-oracao form input:focus,
+.pedido-oracao form textarea:focus {
+    outline: none;
+    border-color: #b71c1c;
+    box-shadow: 0 0 5px rgba(183, 28, 28, 0.5);
+}
+
+.pedido-oracao form button {
+    background: #b71c1c;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pedido-oracao form button:hover {
+    background: #880e4f;
 }
