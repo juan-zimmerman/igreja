@@ -14,7 +14,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: linear-gradient(45deg, #b71c1c, #d32f2f);
+    background: linear-gradient(45deg, #b71c1c, #d32f2ffa, #b71c1c);
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -23,25 +23,38 @@ header {
     z-index: 1000;
 }
 
-header h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+/* Navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem; /* Espaço interno para as laterais */
 }
 
-header nav ul {
+/* Logo */
+nav .logo {
+    flex: 0 0 auto; /* Mantém o tamanho do logo fixo */
+}
+
+nav .logo img {
+    margin-left: 0px;
+    height: 90px; /* Ajuste o tamanho do logo */
+    width: auto;
+    display: block;
+}
+
+/* Menu */
+nav .menu {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 20px;
+    gap: 20px; /* Espaço entre os itens */
+    flex: 1; /* Faz o menu ocupar o espaço necessário para centralizar */
 }
 
-header nav ul li {
-    margin: 0;
-}
-
-header nav ul li a {
+nav .menu li a {
     text-decoration: none;
+    font-size: 20px;
     color: white;
     font-weight: 600;
     padding: 0.5rem 1rem;
@@ -49,13 +62,13 @@ header nav ul li a {
     transition: background 0.3s ease;
 }
 
-header nav ul li a:hover {
+nav .menu li a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
 /* Seção principal */
 .hero {
-    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    background: url('img/banner.png') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 5rem 1rem;
@@ -205,55 +218,12 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Álbuns */
-.albuns {
-    margin-top: 3rem;
-    text-align: center;
-}
-
-.albuns h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #b71c1c;
-}
-
-.albuns-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.album {
-    text-decoration: none;
-    color: #333;
-    text-align: center;
-    width: 200px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.album img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.album p {
-    margin-top: 0.5rem;
-    font-weight: bold;
-}
-
-.album:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 /* Mensagem Diária */
 .mensagem-diaria {
     background: #f4f4f4;
     padding: 2rem 1rem;
     text-align: center;
-    margin: 2rem auto;
+    margin: 6rem auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 80%;
@@ -280,7 +250,7 @@ footer {
     margin: 2rem auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    width: 80%;
+    width: 50%;
 }
 
 .transmissao-ao-vivo h2 {
